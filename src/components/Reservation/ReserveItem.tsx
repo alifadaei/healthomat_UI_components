@@ -16,11 +16,14 @@ const ReservationItemTitle = (props: ReserveItemTitleProps) => {
   const [showNumber, setShowNumber] = useState(!isFullfilled);
 
   return (
-    <div className="flex items-center" onClick={onBack.bind(null, step)}>
+    <div
+      className="flex items-center cursor-pointer"
+      onClick={onBack.bind(null, step)}
+    >
       <div
         className={`h-10 w-10 flex items-center justify-center rounded-full
         ml-3 text-center text-lg  relative
-        text-white ${isFullfilled ? "bg-green-500 text-sm" : "bg-primary"}`}
+        text-white ${isFullfilled ? "bg-accent text-sm" : "bg-primary-900"}`}
       >
         <Transition
           in={isFullfilled}

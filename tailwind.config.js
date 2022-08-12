@@ -6,7 +6,14 @@ module.exports = {
     colors: {
       white: "white",
       back: "#f9f9f9",
-      primary: "#68605e",
+      primary: {
+        100: "#FEECFE",
+        200: "#F99FF9",
+        500: "#F566F5",
+        900: "#c20cc2",
+      },
+      secondary: "#F2CD60",
+      accent: "#25BA75",
       bluegray: colors.blueGray,
       coolgray: colors.coolGray,
       gray: colors.gray,

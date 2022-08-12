@@ -8,7 +8,7 @@ import { Transition } from "react-transition-group";
  */
 const ReserveTimeCell = (props: { time: string }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-back hover:bg-white transition-all border border-white">
+    <div className="flex flex-col justify-center items-center bg-back hover:bg-primary-100 transition-all border border-white">
       <div className="p-4">{props.time}</div>
     </div>
   );
@@ -84,7 +84,7 @@ const ReserveTimeTable = (props: { onForward: () => void }) => {
                 <div
                   key={time.time_id}
                   onClick={clickHandler.bind(null, time.time_id)}
-                  className={`${isOpen && "border"}`}
+                  className={`${isOpen && "border border-primary-500"}`}
                 >
                   <ReserveTimeCell time={time.time} />
                   <Transition in={isOpen} timeout={300}>

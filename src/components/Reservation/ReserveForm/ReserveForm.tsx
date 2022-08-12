@@ -41,7 +41,12 @@ const ReserveForm = (props: { onForward: () => void }) => {
         id="name"
       />
       <Input type="number" className="bg-back" name="شماره همراه" id="name" />
-      <Input type="email" className="bg-back" name="نشانی اینترنتی" id="name" />
+      <Input
+        type="email"
+        className="bg-back ltr"
+        name="نشانی اینترنتی"
+        id="name"
+      />
       <Button onClick={props.onForward} className={"mx-auto block mt-5"}>
         ادامه
       </Button>
