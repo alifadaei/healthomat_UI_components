@@ -67,7 +67,7 @@ const ReserveTimeTable = (props: { onForward: () => void }) => {
            flex-col justify-evenly "
           >
             <div
-              className={`p-4 flex flex-col 
+              className={`p-2 py-4 sm flex flex-col 
             justify-center items-center bg-white
              border border-solid border-white 
              transition-all duration-700
@@ -75,7 +75,7 @@ const ReserveTimeTable = (props: { onForward: () => void }) => {
              ${index === 0 ? "rounded-tr-3xl" : ""}
              `}
             >
-              <div className="font-bold">{col.day}</div>
+              <div className="font-bold text-sm sm:text-base">{col.day}</div>
               <small className="text-xs">{col.date}</small>
             </div>
             {col.times.map((time) => {
@@ -94,7 +94,7 @@ const ReserveTimeTable = (props: { onForward: () => void }) => {
                           className={`transition-all duration-300 overflow-hidden
                         ${
                           state === "entering" || state === "entered"
-                            ? "max-h-[7rem]"
+                            ? "max-h-[10rem]"
                             : state === "exiting" || state === "exited"
                             ? "max-h-[0]"
                             : null

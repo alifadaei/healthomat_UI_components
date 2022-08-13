@@ -6,7 +6,7 @@ import ReserveForm from "./ReserveForm/ReserveForm";
 import { useState } from "react";
 import { useCallback } from "react";
 
-const Reserve = () => {
+const Reservation = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const nextStepHandler = () => {
     setCurrentStep((prevStep) => {
@@ -23,10 +23,7 @@ const Reserve = () => {
   );
 
   return (
-    <Card
-      className="flex flex-col my-4 mx-auto p-4 w-[25rem] bg-white"
-      enableShadow
-    >
+    <Card className="flex flex-col w-full p-4 bg-white md:mx-2" enableShadow>
       <h4 className="text-xl my-2 mb-5 font-bold">همین الان رزرو کن</h4>
       {/*step I */}
       <ReserveItem
@@ -73,4 +70,4 @@ const Reserve = () => {
     </Card>
   );
 };
-export default Reserve;
+export default Reservation;

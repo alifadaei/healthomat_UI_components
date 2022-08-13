@@ -10,7 +10,7 @@ const ReserveTimeItems = (props: ReserveTimeItemsProps) => {
           <button
             onClick={item === "ادامه" ? props.onForward : undefined}
             key={Math.random()}
-            className="rounded-3xl w-[85%] py-1 mb-2 px-4 text-xs 
+            className="rounded-3xl w-[85%] py-2 mb-2 px-4 text-xs 
               shadow-xl bg-white font-light transition-all duration-700
               hover:bg-primary-900 hover:text-white"
           >
