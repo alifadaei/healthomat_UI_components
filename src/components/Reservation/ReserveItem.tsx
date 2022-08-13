@@ -50,7 +50,7 @@ const ReservationItemTitle = (props: ReserveItemTitleProps) => {
         {showNumber && <div className="enterBounce">{step}</div>}
       </div>
 
-      <h4 className="m-0 font-semibold">{title}</h4>
+      <h4 className="m-0 font-semibold text-sm sm:text-base">{title}</h4>
     </div>
   );
 };
@@ -67,7 +67,7 @@ const ReserveItem = (props: ReserveItemProps) => {
   const isOpen = step === currentStep;
   const isFullfilled = currentStep > step;
   return (
-    <Card className="p-5 bg-back mb-5" enableShadow={false}>
+    <Card className="p-4 md:p-5 bg-back mb-5" enableShadow={false}>
       <ReservationItemTitle
         title={title}
         step={step}

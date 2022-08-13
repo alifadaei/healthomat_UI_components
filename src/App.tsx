@@ -1,9 +1,10 @@
 import React from "react";
-import Reserve from "./components/Reservation/Reserve";
+import DoctorProfile from "./components/DoctorProfile/DoctorProfile";
+// import Reserve from "./components/Reservation/Reserve";
 const App = () => {
   return (
     <React.Fragment>
-      <Reserve />
+      <DoctorProfile />
     </React.Fragment>
   );
 };
