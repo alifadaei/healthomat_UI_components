@@ -23,7 +23,10 @@ const Reservation = () => {
   );
 
   return (
-    <Card className="flex flex-col w-full p-4 bg-white md:mx-2" enableShadow>
+    <Card
+      className="flex flex-col mb-9 w-full p-4 bg-white md:mx-2  md:w-3/5"
+      enableShadow
+    >
       <h4 className="text-xl my-2 mb-5 font-bold">همین الان رزرو کن</h4>
       {/*step I */}
       <ReserveItem

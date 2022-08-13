@@ -16,7 +16,7 @@ const DoctorPortfolio = (props: DoctorPortfolioDetail) => {
 
   return (
     <Card
-      className="flex flex-col w-full mb-4 md:mx-2 justify-between items-center bg-white p-8 text-center"
+      className="flex flex-col w-full md:w-2/5 mb-4 md:mx-2 justify-between items-center bg-white p-8 text-center"
       enableShadow
     >
       <img
