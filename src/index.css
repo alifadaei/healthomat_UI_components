@@ -23,6 +23,13 @@
 .ltr {
   direction: ltr;
 }
+
+* {
+  cursor: default;
+}
+
+/*============= key frames ============= */
+
 @keyframes enterBounce {
   0% {
     transform: scale(0);
@@ -46,6 +53,8 @@
     transform: scale(0);
   }
 }
+
+/*============= animations ============= */
 .enterBounce {
   animation-duration: 500ms;
   animation-name: enterBounce;

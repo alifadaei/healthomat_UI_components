@@ -17,7 +17,9 @@ const ReservationItemTitle = (props: ReserveItemTitleProps) => {
 
   return (
     <div
-      className="flex items-center cursor-pointer"
+      className={`flex items-center ${
+        isFullfilled ? "cursor-pointer" : "cursor-default"
+      }  `}
       onClick={onBack.bind(null, step)}
     >
       <div
