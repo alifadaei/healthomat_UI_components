@@ -2,6 +2,7 @@ import DoctorProfile from "./components/DoctorProfile/DoctorProfile";
 import { Link, Routes, Route } from "react-router-dom";
 import LabResults from "./components/LabResults/LabResults";
 import Wrapper from "./components/UI/Wrapper/Wrapper";
+import ResultBar from "./components/LabResults/ResultBar/ResultBar";
 // import Reserve from "./components/Reservation/Reserve";
 
 const Home = () => {
@@ -30,6 +31,11 @@ const UIElements = [
     link: "doctor-profile",
     element: <DoctorProfile />,
     name: "Doctor Profile",
+  },
+  {
+    link: "result-bar",
+    element: <ResultBar />,
+    name: "Result Bar",
   },
 ];
 

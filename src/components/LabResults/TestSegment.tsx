@@ -1,4 +1,3 @@
-import { table } from "console";
 import Card from "../UI/Card/Card";
 
 const TestSegment = () => {
