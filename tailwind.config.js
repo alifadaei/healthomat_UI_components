@@ -39,6 +39,7 @@ module.exports = {
     },
     fontFamily: {
       light: "Iransans Light",
+      helvetica: "helvetica",
     },
     extend: {},
   },

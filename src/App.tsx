@@ -1,11 +1,13 @@
 import DoctorProfile from "./components/DoctorProfile/DoctorProfile";
 import { Link, Routes, Route } from "react-router-dom";
+import LabResults from "./components/LabResults/LabResults";
+import Wrapper from "./components/UI/Wrapper/Wrapper";
 // import Reserve from "./components/Reservation/Reserve";
 
 const Home = () => {
   return (
     <div className="flex flex-col mt-10 justify-evenly items-center text-center  font-bold">
-      <h1 className="text-3xl">Welcome to UI elements home</h1>
+      <h1 className="text-3xl">Welcome to UI elements</h1>
       <h2 className="text-accent">A project of Healhomat</h2>
       <div className="text-white">
         {UIElements.map((elem) => (
@@ -23,6 +25,7 @@ const Home = () => {
 
 const UIElements = [
   { link: "/", element: <Home />, name: "Home" },
+  { link: "/lab-result", element: <LabResults />, name: "Lab Results" },
   {
     link: "doctor-profile",
     element: <DoctorProfile />,
@@ -32,11 +35,13 @@ const UIElements = [
 
 const App = () => {
   return (
-    <Routes>
-      {UIElements.map((elem) => {
-        return <Route path={elem.link} element={elem.element} />;
-      })}
-    </Routes>
+    <Wrapper>
+      <Routes>
+        {UIElements.map((elem) => {
+          return <Route path={elem.link} element={elem.element} />;
+        })}
+      </Routes>
+    </Wrapper>
   );
 };
 
