@@ -3,7 +3,7 @@ type WrapperProps = {
 };
 
 const Wrapper = (props: WrapperProps) => {
-  return <div className="max-w-3xl mx-auto px-3 py-3">{props.children}</div>;
+  return <div className="max-w-7xl mx-auto px-3 py-3">{props.children}</div>;
 };
 
 export default Wrapper;
